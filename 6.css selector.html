@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Selector</title>
+    <style> 
+       /*元素选择器  */
+    h2{
+        color:red
+    }
+    /* 类选择器 */
+    .hightlight{
+        background-color: yellow;
+    }
+    /* ID 选择器 */
+    #header{
+        font-size: 19px;
+    }
+    /* 通用选择器 */
+    *{
+        font-family: "kaiti";
+    }
+    /* 子元素选择器 */
+    .father > .son{
+        color:yellowgreen;
+    }
+    /* 后代选择器 */
+    .father p{
+        color:blueviolet
+    }
+    /* 相邻兄弟选择器 */
+    h3 + p{
+        background-color: red; 
+    }
+    /* 伪类选择器 */
+    #element.hover{
+        background-color: yellow;
+    }
+    </style>
+    
+
+    
+
+    
+
+</head>
+<body>
+    <h1>Different kinds of CSS Selectos</h1>
+    <h2>This is a tag/element selector eg</h2>
+    <h3 class="hightlight">This is a class selector</h3>
+    <h3>This is a compared h3</h3>
+    <h4 id="header">This is an id selector eg</h4>
+    <div class="father">
+        <p class="son">This is a son element selector eg</p>
+        <div class="grandson">This is a offspring selector eg</div>
+    </div>
+    <hr>
+    <p>This is a ordinary p tag</p>
+    <h3>This is a neighbouring brothers selector</h3>
+    <p>This is another p tag </p>
+    <h3 id="element">伪类选择器</h3>
+    <!-- 伪类有问题 -->
+</body>
+</html>
