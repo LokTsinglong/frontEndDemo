@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floating</title>
+    <style>
+        .father{
+            background-color: aquamarine;
+            /* height: 100px; */
+            /* 这里一定要设定父元素的高度、因为子元素浮动了，
+            所以撑不起父元素了，没有设置父元素的高度的话，会坍塌 */
+            /* overflow: hidden;  */
+            /* 清除浮动方法一 */
+            border: 10px solid brown;
+            
+        }
+        .left-son{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            float: left;
+        }
+        .right-son{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float:right;
+        }
+        /* 清除浮动方法二，伪元素选择器 */
+        .father::after{
+            content: "";  
+            /* 创建一个空的伪元素 */
+            display: table;
+            /* 使其成为一个块级元素  */
+            clear:both;
+            /* clear掉左右两边的浮动 */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left-son">Left floating</div>
+        <div class="right-son">Right floating</div>
+
+    </div>
+    <p>This is a long text This is a long text This is a long text This is a long text This is a long text 
+        This is a long text This is a long text This is a long text This is a long text This is a long text 
+        This is a long text This is a long text</p>
+    
+</body>
+</html>
