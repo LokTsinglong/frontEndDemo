@@ -7,16 +7,40 @@
 </head>
 <body>
     <script>
-        var x;
+        var x; 
+        // var 声明的变量具有函数作用域
+        // var is not recommended
+        // undefined 一个variable has been declared but has not been assigned
         let y=5;
+        // let 声明变量作用于块级作用域
         const PI=3.14;
         console.log(x,y,PI);
         let name="Java";
         console.log(name);
         let empty_value=null;
+        //null value is assigned
         console.log(empty_value);
 
-        let
+        // let time=11
+        // if(time<12){
+        //     alert("good morning!")
+        // }else if(time<18){
+        //     alert("good afternoon!")
+        // }else{
+        //     "good evening!"
+        // }
+
+        console.log("For Circulation")
+        for(let i =1; i<=10; i++){
+            console.log(i);
+        }
+        console.log("While Circulation")
+        let count=1;
+        while (count <= 10){
+            console.log(count);
+            count++;
+    
+        }
     </script>
     
 </body>
