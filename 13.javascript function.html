@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript function</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            console.log("hello world!")
+        }
+        hello();
+        function hello_with_return(){
+            return "hello world with return"
+        }
+        let a = hello_with_return();
+        console.log(a);
+        console.log(hello_with_return());
+        function hello_with_parameters(name){
+            console.log("hello"+name)
+        }
+        hello_with_parameters("Chikawai");
+        // action scope 作用域
+        let global_var="global variable print"
+        function local_var_function(){
+            let local_var="local variable print"
+            console.log(local_var);
+            console.log(global_var);
+        }
+        local_var_function();
+        console.log(local_var);
+        concole.log(global_var);
+    </script>
+</body>
+</html>
