@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Crud Create Retrieve Update Delete</title>
+    <style>
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+        th,td{
+            border:1px solid gray;
+            text-align: center;
+            padding:8px;
+        }
+        th{
+            background-color: gray;
+        }
+        button{
+            margin-left:5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CRUD of Table</h1>
+    <button>Add New Data</button>
+    <table id="table1">
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Operation</th>
+        </tr>
+        <tr>
+            <td>Chikawai</td>
+            <td>123456</td>
+            <td>
+                <button>edit</button>
+                <button>delete</button>
+            </td>
+        </tr>
+    </table>
+    <script scr="./js/table.js"></script>
+    <!-- 导入js文件失败 -->
+</body>
+</html>
