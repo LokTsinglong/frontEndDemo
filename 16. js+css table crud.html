@@ -25,7 +25,7 @@
 </head>
 <body>
     <h1 style="text-align: center;">CRUD of Table</h1>
-    <button>Add New Data</button>
+    <button onclick="addRow()">Add New Data</button>
     <table id="table1">
         <tr>
             <th>Name</th>
@@ -34,14 +34,17 @@
         </tr>
         <tr>
             <td>Chikawai</td>
-            <td>123456</td>
+            <td>123456</td> 
             <td>
-                <button>edit</button>
-                <button>delete</button>
+                <button onclick="editRow(this)">edit</button>
+                <button onclick="deleteRow(this)">delete</button>
+                <!-- this 指向context object -->
+                <!-- 简单来说this 就是指向这个button object -->
             </td>
         </tr>
     </table>
-    <script scr="./js/table.js"></script>
+    <script src="./js/table.js"></script>
     <!-- 导入js文件失败 -->
+     <!-- 注意src拼写，source=src -->
 </body>
 </html>
